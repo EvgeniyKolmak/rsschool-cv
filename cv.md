@@ -56,9 +56,10 @@ return sb.toString();
 }
 }
 ```
+## Work experience
+rsschool-cv - <https://github.com/EvgeniyKolmak/rsschool-cv/blob/gh-pages/cv.md?plain=1>
 
 ## Education
-2021 - present    Software engineer, Faculty of Information Technology and Robotics, 3rd year study, 
-                  Belarusian National Technical University, Minsk, Belarus
++ __2021 - present__      Software engineer, Faculty of Information Technology and Robotics, 3rd year study, Belarusian National Technical University, Minsk, Belarus
 
-2010 - 2021       Secondary schooд № 1, Chashniki Belarus
++ __2010 - 2021__         Secondary schooд № 1, Chashniki Belarus
