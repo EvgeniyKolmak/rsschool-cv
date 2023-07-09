@@ -1,3 +1,17 @@
-<style>
-    background-color: #ffffff;
-</style>
+@keyframes color-change {
+    0% {
+        color: black;
+        }
+    
+    50% {
+        color: white;
+        }
+    
+    100% {
+        color: black;
+        }
+}
+
+.contact-part .objectives-part .profile-part .skills-part .codes-part .work-part .education-part {
+    animation: color-change 3s infinite;
+}
