@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheetc">
+        <meta charset="UTF-8">
+        <title>My CV</title>
+    </head>
+	
+    <body>
+		<header>
+		<img src="/logo.png" alt="Code Basics">
+			<nav>
+				<ul>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#objective">Objective</a></li>
+					<li><a href="#profile">Profile</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#code">Code Examples</a></li>
+					<li><a href="#work">Work experience</a></li>
+					<li><a href="#education">Education</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<h1>Kolmak Evgeniy</h1>
+			<img src="https://sun9-58.userapi.com/impf/c636522/v636522762/5eb31/_5fChIJc7sc.jpg?size=2560x1438&quality=96&sign=0c223e3130c33adc00e6d9559297b61f&type=album" alt="My avatar"  width="600" height="300">
+			<section class="contact-part">
+				<h2 id="contact">Contact</h2>
+				<table>
+					<tbody>
+						<tr>
+							<td>Phone:</td>
+							<td>+375(33)305-24-42</td>
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td>zenakolmak669@gmail.com</td>
+						</tr>
+						<tr>
+							<td>Address:</td>
+							<td>73/69, Leninskay Street Chashniki Vitebskay oblast' Belarus</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section class="objectives-part">
+				<h2 id="objective">Objective</h2>
+				<ol>
+				   <li>Web designer</li> 
+				   <li>Game developer</li>
+				</ol>
+			</section>
+			<section class="profile-part">
+				<h2 id="profile">Profile</h2>
+				<p>A purposeful, hardworking student who wants to use his skills to grow and progress both as a specialist and as a person.</p>
+			</section>
+			<section class="skills-part">
+				<h2 id="skills">Skills</h2>
+				<ul>
+					<li>English language proficiency level A2 (university courses were completed)</li>
+					<li> There is a basic knowledge of programming languages such as
+						<ul>
+							<li>Java</li>
+							<li>C++</li>
+							<li>C#</li>
+							<li>Python</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="codes-part">
+				<h2 id="code">Code Examples</h2>
+				<p>Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word
+				within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often
+				referred to as Pascal case). The next words should be always capitalized.</p>
+				<pre>
+					<code>
+						class Solution {
+				
+							static String toCamelCase(String s) {
+				
+								StringBuilder sb = new StringBuilder();
+				
+								Boolean nextCapital = false;
+				
+								for (int i=0; i &lt; s.length(); i++) {
+				
+									if (Character.isLetter(s.charAt(i))) {
+				
+										char tmp = s.charAt(i);
+					
+										if (nextCapital) tmp = Character.toUpperCase(tmp);
+					
+										sb.append(tmp);
+					
+										nextCapital = false;
+				
+									} else {
+										nextCapital = true;
+									}
+								}
+				
+								return sb.toString();
+							}
+						}
+					</code>
+				</pre>
+			</section>
+			<section class="work-part">
+				<h2 id="work">Work experience</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Project</th>
+							<th>Link</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>rsschool-cv</td>
+							<td>
+								<a href="https://github.com/EvgeniyKolmak/rsschool-cv/blob/gh-pages/cv.md?plain=1">https://github.com/EvgeniyKolmak/rsschool-cv/blob/gh-pages/cv.md?plain=1</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section class="education-part">
+				<h2 id="education">Education</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Period of study</th>
+							<th>Place of study</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2021 - present</td>
+							<td>Software engineer, Faculty of Information Technology and Robotics, 3rd year study, Belarusian National Technical
+							University, Minsk, Belarus</td>
+						</tr>
+						<tr>
+							<td>2010 - 2021</td>
+							<td>Secondary schooд № 1, Chashniki Belarus</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+		
+		<footer>
+            <a href="https://github.com/EvgeniyKolmak">My GitHub</a>
+            <img style="text-align:right" src="https://rs.school/images/rs_school_js.svg"  height="25" width="25"></p>
+            <a href="https://rs.school/js/">Site of course</a>
+		</footer >
+        
+    </body>
+</html>
