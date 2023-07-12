@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #af0eef);
+    animation: gradient 15s ease infinite;
+	height: 150vh;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
 @keyframes color-change {
     0% {
         color: black;
@@ -15,3 +24,4 @@
 .contact-part .objectives-part .profile-part .skills-part .codes-part .work-part .education-part {
     animation: color-change 3s infinite;
 }
+
