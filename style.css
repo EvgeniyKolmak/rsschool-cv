@@ -1,27 +1,168 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #af0eef);
-    animation: gradient 15s ease infinite;
+html {
+    animation: gradient 5s ease infinite;
 	height: 150vh;
 	font-weight: bold;
 	letter-spacing: 2px;
 }
 
-@keyframes color-change {
+body {
+    background-image: url("https://top-fon.com/uploads/posts/2023-02/1675306060_top-fon-com-p-fon-dlya-ofitsialno-delovoi-prezentatsii-88.jpg");
+    background-size: cover;    
+}
+
+/*The first line consists of name, avatar, person information*/
+.upper-line {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    height: 40%;
+    background-color: #403d3a;
+    color: white;
+}
+
+.name {
+    font: normal small-caps bold  24px/1.2 sans-serif;
+    width: 33%;
+    padding: 0% 0% 0% 7%;
+}
+
+#job {
+    color: white;
+}
+
+.avatar {
+    width: 33%;
+    height: 90%;
+}
+
+.profile-part {
+    width: 33%;
+    text-align: justify;
+    padding: 0 5px 0 5px;
+}
+
+/*The second line consists of two columns*/
+.down-line {
+    display: flex;
+    
+}
+
+
+/*The left column contains contscts, skills*/
+.contact-param {
+    font: normal small-caps bold 16px/1.2 sans-serif;
+    margin-left: 85px;
+}
+
+.contact-data {
+    margin-left: 85px;
+}
+
+.separating-line {
+    background-color: #000;
+    width: 320px;
+    height: 1px;
+    margin-left: 30px;
+}
+
+.skill-container {
+    border: 3px dotted #000;
+    /*border-width: 20px;
+    border-color: #000;*/
+}
+
+.lang {
+    display: flex;
+    margin: 25px 25px;
+    font-size: 20px;
+}
+
+/*The right column contains contscts, skills*/
+.left-column {
+    background-color: #f0daba;
+    width: 40%;
+}
+
+.right-column {
+    background-color: #dfdfdf;
+    width: 60%;
+}
+
+.group-1 {
+    display: flex;
+}
+
+.image {
+    margin-top: 20px;
+    margin-left: 32px;
+    margin-right: -50px;
+}
+
+.separating-line1 {
+    background-color: white;
+    width: 33%;
+    height: 1px;
+    margin-left: 65px;
+}
+
+#partition {
+    font: normal none bold 40px/1.0 sans-serif;
+    padding: 20px;
+    
+}
+
+@keyframes gradient {
     0% {
-        color: black;
+        background-color: #ee7752;
+        }
+    
+    25% {
+        background-color: #e73c7e;
         }
     
     50% {
-        color: white;
+        background-color: #23a6d5;
         }
-    
+
+    75% {
+        background-color: #af0eef;
+        }
+
     100% {
-        color: black;
-        }
+        background-color: #ee7752;
+        }    
 }
 
-.contact-part .objectives-part .profile-part .skills-part .codes-part .work-part .education-part {
-    animation: color-change 3s infinite;
+main{
+	background-color: white;
+	width: 960px;
+    height: 930px;
+	position: absolute;
+    
+    margin: 200px, 100px;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 60%;
 }
 
+
+
+a {
+    color: #000; 
+    text-decoration: none;
+}
+
+
+
+.internal-links {
+    width: 400px;
+}
+
+/**/
+.borders {
+    border-style: solid;
+    border-color: #000 #000 #000 #f0daba;
+    border-width: 5px;
+    margin: 30px;
+}
